@@ -9,6 +9,8 @@ const CartProvider = ({ children }) => {
     const addNewCartElement = (product) => {
         setCartItems((prevItems) => {
             // Check if product already exists by id
+            if (!prevItems) return;
+            
             const existingIndex = prevItems.findIndex(
                 (item) => item.id === product.id
             );
