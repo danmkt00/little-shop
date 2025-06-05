@@ -16,10 +16,7 @@ const CartProvider = ({ children }) => {
             if (existingIndex !== -1) {
                 // Product exists, create a new array updating count
                 const updatedItems = [...prevItems];
-                updatedItems[existingIndex] = {
-                    ...updatedItems[existingIndex],
-                    count: (updatedItems[existingIndex].count || 1) + 1,
-                };
+                updatedItems[existingIndex].count += 1;
                 setCartItems(updatedItems);
             } else {
                 // Product does not exist, add with count = 1

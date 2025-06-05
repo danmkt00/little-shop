@@ -42,7 +42,7 @@ const Navbar = ({ title = "My Website" }) => {
                         >
                             <FaShoppingCart className="text-xl mr-2" />
                             <span className="mr-2">
-                                Cart ({cartItems.length})
+                                Cart ({cartItems && cartItems.length})
                             </span>
                             <span className="flex items-center text-green-600 font-medium">
                                 {price}

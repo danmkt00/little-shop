@@ -9,7 +9,6 @@ const Product = ({ product }) => {
     const { addNewCartElement } = useCartContext();
 
     const addToCart = () => {
-        console.log(product); //my product
 
         setShowMessage(true);
 
