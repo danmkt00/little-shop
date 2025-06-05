@@ -8,9 +8,6 @@ const CartProvider = ({ children }) => {
 
     const addNewCartElement = (product) => {
         setCartItems((prevItems) => {
-            // Check if product already exists by id
-            if (!prevItems) return;
-            
             const existingIndex = prevItems.findIndex(
                 (item) => item.id === product.id
             );
@@ -19,10 +16,10 @@ const CartProvider = ({ children }) => {
                 // Product exists, create a new array updating count
                 const updatedItems = [...prevItems];
                 updatedItems[existingIndex].count += 1;
-                setCartItems(updatedItems);
+                return updatedItems;
             } else {
                 // Product does not exist, add with count = 1
-                setCartItems([...prevItems, { ...product, count: 1 }]);
+                return [...prevItems, { ...product, count: 1 }];
             }
         });
 
