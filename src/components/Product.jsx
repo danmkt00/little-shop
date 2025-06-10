@@ -39,7 +39,7 @@ const Product = ({ product }) => {
                     </span>
 
                     <FaShoppingCart
-                        className="cursor-pointer text-xl text-blue-600 hover:text-blue-800 hover:rotate-12 transition-transform duration-300"
+                        className="cursor-pointer text-xl text-blue-500 hover:text-blue-600 hover:rotate-12 transition-transform duration-300"
                         onClick={addToCart}
                     />
                 </div>

@@ -20,10 +20,10 @@ const Cart = () => {
 
     return (
        <>
-    <div className="px-6 sm:px-10 lg:px-20 mb-2 pt-2 text-blue-700">
+    <div className="px-6 sm:px-10 lg:px-20 mb-2 pt-2 text-blue-500">
         <button
             onClick={() => navigate("/")}
-            className="text-sm hover:underline cursor-pointer hover:text-blue-900"
+            className="text-sm hover:underline cursor-pointer hover:text-blue-600"
         >
             <div className="flex items-center gap-1">
                 <FaArrowLeft />
@@ -81,7 +81,7 @@ const Cart = () => {
                 <p className="text-lg">Your cart is empty.</p>
                 <button
                     onClick={() => navigate("/")}
-                    className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition cursor-pointer"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition cursor-pointer"
                 >
                     Go to shopping
                 </button>
