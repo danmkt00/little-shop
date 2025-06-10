@@ -2,6 +2,9 @@ import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
     return (
         <footer className="bg-gray-50 shadow-sm py-6 mt-auto">
             <nav className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
@@ -12,6 +15,7 @@ const Footer = () => {
                     <li>
                         <NavLink
                             to="/"
+                            onClick={scrollToTop}
                             className={({ isActive }) =>
                                 isActive
                                     ? "text-blue-600 underline"
@@ -24,6 +28,7 @@ const Footer = () => {
                     <li>
                         <NavLink
                             to="/cart"
+                            onClick={scrollToTop}
                             className={({ isActive }) =>
                                 `flex items-center gap-2 ${
                                     isActive
