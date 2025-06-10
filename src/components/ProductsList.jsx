@@ -69,7 +69,7 @@ const ProductsList = () => {
                     ))}
                 </div>
             ) : (
-                <div className="text-center text-gray-500 italic mt-6 space-y-4">
+                <div className="text-center text-gray-500 italic mt-6 space-y-4 min-h-[calc(100vh-270px)]">
                     <p className="text-lg">
                         No products matched your search: '{searchValue}'
                     </p>

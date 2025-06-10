@@ -5,6 +5,7 @@ import "./App.css";
 import SearchProvider from "./providers/SearchProvider";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
@@ -22,6 +23,7 @@ function App() {
                         <Route path="/cart" element={<Cart />}></Route>
                         <Route path="*" element={<NoPage />}></Route>
                     </Routes>
+                    <Footer />
                 </CartProvider>
             </SearchProvider>
         </>
