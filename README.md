@@ -13,7 +13,6 @@ A modern React-based e-commerce interface that fetches product data from [dummyj
 - 🛒 Add to Cart
 - 💲 Real-time total price calculation
 - 🧭 Navigation with `react-router-dom`
-- 💡 Sticky navbar
 - 🌙 Responsive & styled with Tailwind CSS
 
 ---
