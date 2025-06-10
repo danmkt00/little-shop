@@ -63,7 +63,7 @@ const ProductsList = () => {
                 </button>
             </div>
             {visibleProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-6 pb-5">
                     {visibleProducts.map((product) => (
                         <Product key={product.id} product={product} />
                     ))}

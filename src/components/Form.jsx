@@ -34,6 +34,7 @@ const Form = () => {
             >
                 <input
                     type="text"
+                    required
                     value={value}
                     onChange={changeHandler}
                     placeholder="Input product name"
